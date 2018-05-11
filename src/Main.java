@@ -15,5 +15,9 @@ public class Main {
         listaC.insertar(tercero);
         System.out.println(listaC.nelementos);
         System.out.println(listaC.recorrer());
+        //listaC.eliminar();
+        //System.out.println(listaC.nelementos + "\n" + listaC.recorrer());
+        listaC.eliminaDespues();
+        System.out.println(listaC.nelementos + "\n" + listaC.recorrer());
     }
 }

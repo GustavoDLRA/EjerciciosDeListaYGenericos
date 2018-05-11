@@ -36,4 +36,26 @@ public class Lista<T> {
         }
         return datos;
     }
+    public void eliminar(){
+        inicio = inicio.siguiente;
+        nelementos--;
+        if (nelementos == 0) {
+            inicio=pivote=null;
+        }
+    }
+    public void eliminaDespues(){
+        /*pivote=inicio.siguiente;
+        nelementos--;
+        if (nelementos==0){
+            inicio=pivote=null;
+        }*/
+        if (nelementos==1) {
+            inicio=pivote=null;
+        }
+        for(int i=1;i<nelementos;i++){
+            pivote=pivote.siguiente;
+        }
+        pivote.siguiente=null;
+        nelementos--;
+    }
 }
